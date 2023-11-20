@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  webpack: ^5
+  '@types/react': 17.0.40
+
 importers:
 
   .:
@@ -171,8 +175,8 @@ importers:
         specifier: ^20.5.2
         version: 20.9.2
       '@types/react':
-        specifier: ^18.2.0
-        version: 18.2.37
+        specifier: 17.0.40
+        version: 17.0.40
       '@types/react-dom':
         specifier: ^18.2.0
         version: 18.2.15
@@ -2149,13 +2153,13 @@ packages:
   /@types/react-dom@18.2.15:
     resolution: {integrity: sha512-HWMdW+7r7MR5+PZqJF6YFNSCtjz1T0dsvo/f1BV6HkV+6erD/nA7wd9NM00KVG83zf2nJ7uATPO9ttdIPvi3gg==}
     dependencies:
-      '@types/react': 18.2.37
+      '@types/react': 17.0.40
     dev: true
 
   /@types/react-instantsearch-core@6.26.8:
     resolution: {integrity: sha512-XjsnIaafuT3AnnpFhriv3vt9rGytIVv7+1bHEu185VRjbF0pN5znM4ggRCY8JmTDRPvGWe01qSV48oUW37apGQ==}
     dependencies:
-      '@types/react': 18.2.37
+      '@types/react': 17.0.40
       algoliasearch: 4.20.0
       algoliasearch-helper: 3.15.0(algoliasearch@4.20.0)
     dev: true
@@ -2163,20 +2167,12 @@ packages:
   /@types/react-instantsearch-dom@6.12.6:
     resolution: {integrity: sha512-y1Xc6FMViD3Q3bUzBWvP8tMOZCtyOmzetE+5czZYG/nFKEDxqeM+rDGV1l2WA41Ljy3etuNICTwYHdsMe8lpBw==}
     dependencies:
-      '@types/react': 18.2.37
+      '@types/react': 17.0.40
       '@types/react-instantsearch-core': 6.26.8
     dev: true
 
   /@types/react@17.0.40:
     resolution: {integrity: sha512-UrXhD/JyLH+W70nNSufXqMZNuUD2cXHu6UjCllC6pmOQgBX4SGXOH8fjRka0O0Ee0HrFxapDD8Bwn81Kmiz6jQ==}
-    dependencies:
-      '@types/prop-types': 15.7.10
-      '@types/scheduler': 0.16.6
-      csstype: 3.1.2
-    dev: true
-
-  /@types/react@18.2.37:
-    resolution: {integrity: sha512-RGAYMi2bhRgEXT3f4B92WTohopH6bIXw05FuGlmJEnv/omEn190+QYEIYxIAuIBdKgboYYdVved2p1AxZVQnaw==}
     dependencies:
       '@types/prop-types': 15.7.10
       '@types/scheduler': 0.16.6
@@ -3004,7 +3000,7 @@ packages:
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
-      webpack: '>=2'
+      webpack: ^5
     dependencies:
       '@babel/core': 7.23.3
       find-cache-dir: 3.3.2
@@ -8919,7 +8915,7 @@ packages:
       '@swc/core': '*'
       esbuild: '*'
       uglify-js: '*'
-      webpack: ^5.1.0
+      webpack: ^5
     peerDependenciesMeta:
       '@swc/core':
         optional: true

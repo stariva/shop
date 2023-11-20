@@ -12,11 +12,15 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "stariva-monorepo",
+  "name": "@stariva/monorepo",
   "packageManager": "pnpm@8.10.5",
   "workspaces": [
     "apps/*",
     "packages/*",
     "!apps/app"
-  ]
+  ],
+  "resolutions": {
+    "webpack": "^5",
+    "@types/react": "17.0.40"
+  }
 }
