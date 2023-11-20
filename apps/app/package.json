@@ -4,6 +4,7 @@
   "description": "A starter for Medusa projects.",
   "author": "Maksim",
   "license": "MIT",
+  "private": true,
   "keywords": [
     "sqlite",
     "postgres",
@@ -26,8 +27,8 @@
   },
   "dependencies": {
     "@medusajs/admin": "7.1.7",
-    "@medusajs/cache-inmemory": "^1.8.9",
-    "@medusajs/cache-redis": "^1.8.9",
+    "@medusajs/cache-inmemory": "^1.8.10",
+    "@medusajs/cache-redis": "^1.9.0",
     "@medusajs/event-bus-local": "^1.9.7",
     "@medusajs/event-bus-redis": "^1.8.10",
     "@medusajs/file-local": "^1.0.2",
@@ -87,6 +88,5 @@
     ],
     "coverageDirectory": "./coverage",
     "testEnvironment": "node"
-  },
-  "packageManager": "yarn@3.6.4"
+  }
 }

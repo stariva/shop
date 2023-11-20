@@ -15,10 +15,6 @@
     "cypress": "cypress open",
     "analyze": "ANALYZE=true next build"
   },
-  "resolutions": {
-    "webpack": "^5",
-    "@types/react": "17.0.40"
-  },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@hookform/error-message": "^2.0.0",
