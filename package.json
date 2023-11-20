@@ -1,4 +1,5 @@
 {
+  "name": "@stariva/monorepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -12,7 +13,6 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "@stariva/monorepo",
   "packageManager": "pnpm@8.10.5",
   "workspaces": [
     "apps/*",
