@@ -15,9 +15,8 @@
   },
   "packageManager": "pnpm@8.10.5",
   "workspaces": [
-    "apps/*",
-    "packages/*",
-    "!apps/app"
+    "apps/web",
+    "packages/*"
   ],
   "resolutions": {
     "webpack": "^5",
